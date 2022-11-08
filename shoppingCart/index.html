@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1 class="page-title">Shopping Cart</h1>
+            </div>
+        </div>
+       <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="card card-primary"> 
+                        <div class="card-header"><h1 class="card-title">List Products</h1></div> 
+                        <div class="card-block" id="list-product">
+                            <!-- LIST PRODUCT -->
+                            <div class="media product">
+                                <div class="media-left"><img src="img/book/book1.jpg" alt=""></div>
+                                <div class="media-right">
+                                    <h4 class="media-heading">Nha Gia Kim</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis deserunt, </p>
+                                    <input type="number" name="quantity-product-100" value="1" min="1">
+                                    <div class="btn btn-success"><a href="#" class="price" data-product="100">$21.00</a></div>
+                                </div>
+                            </div>
+                            <div class="media product">
+                                <div class="media-left"><img src="img/book/book2.jpg" alt=""></div>
+                                <div class="media-right">
+                                    <h4 class="media-heading">Nha Gia Kim</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis deserunt, </p>
+                                    <input type="number" name="quantity-product-100" value="1" min="1">
+                                    <div class="btn btn-success"><a href="#" class="price" data-product="100">$21.00</a></div>
+                                </div>
+                            </div>
+                            <div class="media product">
+                                <div class="media-left"><img src="img/book/book3.jpg" alt=""></div>
+                                <div class="media-right">
+                                    <h4 class="media-heading">Nha Gia Kim</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis deserunt, </p>
+                                    <input type="number" name="quantity-product-100" value="1" min="1">
+                                    <div class="btn btn-success"><a href="#" class="price" data-product="100">$21.00</a></div>
+                                </div>
+                            </div>
+                            <div class="media product">
+                                <div class="media-left"><img src="img/book/book4.jpg" alt=""></div>
+                                <div class="media-right">
+                                    <h4 class="media-heading">Nha Gia Kim</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis deserunt, </p>
+                                    <input type="number" name="quantity-product-100" value="1" min="1">
+                                    <div class="btn btn-success"><a href="#" class="price" data-product="100">$21.00</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="card card-danger"> 
+                        <div class="card-header"><h1 class="card-title">Your Cart</h1></div> 
+                        <div class="card-block">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th width="4%">#</th>
+                                        <th>Pokemon</th>
+                                        <th width="15%">Price</th>
+                                        <th width="4%">Quantity</th>
+                                        <th width="20%">Subtotal</th>
+                                        <th width="25%">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="my-cart-body">
+                                    <!-- CART BODY -->
+                                </tbody>
+                                <tfoot id="my-cart-footer">
+                                    <!-- CART FOOTER -->
+                                </tfoot>
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="alert alert-success" role="alert" id="mnotification">Updated <b>ivysaur</b></div>
+                </div>
+            </div>
+    </div>
+	
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/system.js"></script>
+    <script type="text/javascript">
+        System.defaultJSExtensions = true;
+        System.import('./mjs/shopping.js');
+    </script>
+
+</body>
+
+</html>
